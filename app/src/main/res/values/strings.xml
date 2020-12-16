@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">فرم نظر سنجی</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">آزادانه به سوالات زیر پاسخ دهید</string>
+    <string name="text_firstname">نام کوچک</string>
+    <string name="text_lastname">نام خانوادگی</string>
+    <string name="text_age">سن</string>
+    <string name="text_phone">شماره موبایل</string>
+    <string name="text_btn_sabt">ثبت و ورود به نظرسنجی</string>
+    <string name="text_tv_alert">برای اجرای فرم نظرسنجی سن و شماره اجباری هستند</string>
+    <string name="text_btn_gotoResult">تایید و بستن</string>
+</resources>

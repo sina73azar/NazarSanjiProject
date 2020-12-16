@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/getCredentialsFragment">
+
+    <fragment
+        android:id="@+id/getCredentialsFragment"
+        android:name="com.sina.nazarsanjiproject.ui.GetCredentialsFragment"
+        android:label="fragment_get_credentials"
+        tools:layout="@layout/fragment_get_credentials">
+        <action
+            android:id="@+id/action_getCredentialsFragment_to_evaluationQuestionsFragment"
+            app:destination="@id/evaluationQuestionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/evaluationQuestionsFragment"
+        android:name="com.sina.nazarsanjiproject.ui.EvaluationQuestionsFragment"
+        android:label="fragment_evaluation_questions"
+        tools:layout="@layout/fragment_evaluation_questions">
+        <action
+            android:id="@+id/action_evaluationQuestionsFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <argument
+            android:name="curVoter"
+            app:argType="com.sina.nazarsanjiproject.datamodel.Voter" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.sina.nazarsanjiproject.ui.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+</navigation>
